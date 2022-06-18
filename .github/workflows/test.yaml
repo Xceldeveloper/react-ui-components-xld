@@ -21,7 +21,7 @@ jobs:
   Buid Story:
     runs-on: ubuntu-latest
     steps:
-      - run : echo "Building Story"
+      - run: echo "🍏 Building Story"
       - run: yarn build-storybook
       - run: ech "build tdx"
       - run: yarn build
