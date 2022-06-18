@@ -1,4 +1,4 @@
-import Thing from './components/Thing';
-import Button from './components/Button';
+import XThing from './components/XThing';
+import XButton from './components/XButton';
 
-export { Thing, Button };
+export { XThing, XButton };

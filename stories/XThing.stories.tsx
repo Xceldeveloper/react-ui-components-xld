@@ -5,16 +5,16 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-import Thing from "../src/components/Thing";
+import XThing from "../src/components/XThing";
 
 export default {
   title: 'Component/Thing',
-  component: Thing,
+  component: XThing,
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {
     backgroundColor: { control: 'color' },
   },
-} as ComponentMeta<typeof Thing>;
+} as ComponentMeta<typeof XThing>;
 
 // const meta: Meta = {
 //   title: 'Welcome',
@@ -35,7 +35,7 @@ export default {
 
 // const Template: Story<Props> = args => <Thing {...args} />;
 
-const Template: ComponentStory<typeof Thing> = (args) => <Thing {...args} />;
+const Template: ComponentStory<typeof XThing> = (args) => <XThing {...args} />;
 
 
 // By passing using the Args format for exported stories, you can control the props for a component for reuse in a test
