@@ -5,6 +5,7 @@ on:
   - develop
 jobs:
   Explore-GitHub-Actions:
+    name: Learninging
     runs-on: ubuntu-latest
     steps:
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
@@ -19,6 +20,7 @@ jobs:
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
   Buid Story:
+    name: Build Story
     runs-on: ubuntu-latest
     steps:
       - run: echo "🍏 Building Story"
