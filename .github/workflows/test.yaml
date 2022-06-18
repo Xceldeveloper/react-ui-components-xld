@@ -19,7 +19,7 @@ jobs:
         run: |
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
-  Buid Story:
+  Buid-Story:
     name: Build Story
     runs-on: ubuntu-latest
     steps:
