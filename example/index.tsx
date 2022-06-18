@@ -1,16 +1,18 @@
 import 'react-app-polyfill/ie11';
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import { Thing, Button } from '../dist';
+import { XThing, XButton, XInput } from '../';
 
 const App = () => {
   return (
     <div>
-      <Thing children={'Be prepared'} />
+      <XThing children={'Be prepared'} />
 
-      <Button label="Button" backgroundColor='yellow' size='medium' />
+      <XButton label="Button" backgroundColor='yellow' size='medium' />
 
-      <Button label="Overcomer is coming" backgroundColor='red' size='large' />
+      <XButton label="Overcomer is coming" backgroundColor='red' size='large' />
+
+      <XInput label="Input" type="text" />
     </div>
   );
 };
