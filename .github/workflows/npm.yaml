@@ -1,22 +1,23 @@
 name: Publish
-on: [push]
+
+on:
+  push:
     branches:
-      - main
-    tags:
-      - v*.*.*
+    - main
+
 jobs:
-  publish:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@master
+      - uses: actions/checkout@v1
       - uses: actions/setup-node@v1
         with:
           node-version: 12
           registry-url: https://registry.npmjs.org/
-      - run: yarn build
-      - run: yarn publish
+      - run: yarn install
+      - run: npm publish --access public
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.npm_token }}
+          NODE_AUTH_TOKEN: ${{secrets.npm_token}}
 
 
 
