@@ -4,7 +4,9 @@ on:
   branches:
   - 'main'
     paths:
-      - ['**.css','**.scss','**.js','**ts','**tsx']
+      - 'src/components/**.tsx'
+      - 'src/components/**.css'
+      - 'src/components/**.scss'
 jobs:
   size:
     runs-on: ubuntu-latest
