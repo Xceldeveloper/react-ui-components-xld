@@ -12,7 +12,6 @@ module.exports = {
                 extensions: ['.css']
             }),
         )
-
         return config; // always return a config.
     },
 };
