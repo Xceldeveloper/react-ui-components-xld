@@ -2,9 +2,9 @@ name: Test Pull Request
 on:
  pull_request:
     branches:
-      - 'main'
+     - 'main'
     paths:
-      - 'src/components/**/*.js'
+      - 'src/components/**'
 jobs:
   test:
     runs-on: ubuntu-latest
