@@ -3,6 +3,8 @@ on:
  pull_request:
   branches:
   - 'main'
+    paths:
+      - ['**.css','**.scss','**.js','**ts','**tsx']
 jobs:
   size:
     runs-on: ubuntu-latest
