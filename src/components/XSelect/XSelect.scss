@@ -1,0 +1,17 @@
+.select{
+    border-radius: 50px;
+}
+
+.select-stories{
+    border:2px solid grey;
+    outline-style: none;
+    outline-color: transparent;
+    padding:5px 10px;
+    color: grey;
+    min-width: 200px;
+
+    &:focus{
+        outline: none;
+        color:#000
+    }
+}
