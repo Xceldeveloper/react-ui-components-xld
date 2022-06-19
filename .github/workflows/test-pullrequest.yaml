@@ -4,7 +4,7 @@ on:
     branches:
       - 'main'
     paths:
-      - '**.tsx'
+      - 'src/components/**/*.js'
 jobs:
   test:
     runs-on: ubuntu-latest
