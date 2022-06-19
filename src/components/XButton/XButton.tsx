@@ -1,7 +1,7 @@
 import React, { HTMLAttributes } from 'react';
- import '../styles/Button.scss';
+ import './XButton.scss';
 
-export interface ButtonProps extends HTMLAttributes<HTMLButtonElement> {
+export interface Props extends HTMLAttributes<HTMLButtonElement> {
   /**
    * Is this the principal call to action on the page?
    */
@@ -33,7 +33,7 @@ const Button = ({
   backgroundColor,
   label,
   ...props
-}: ButtonProps) => {
+}: Props) => {
   const mode = primary ? 'button button--primary' : 'button button--secondary';
   return (
     <button

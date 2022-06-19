@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/Input.scss';
+import './XInput.scss';
 
 
 export interface InputProps {

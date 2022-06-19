@@ -5,7 +5,7 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-import XThing from "../src/components/XThing";
+import XThing from "./XThing";
 
 export default {
   title: 'Component/Thing',
