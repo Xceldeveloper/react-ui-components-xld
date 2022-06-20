@@ -5,6 +5,7 @@ on:
      - 'main'
    paths:
     - 'src/components/**/*.tsx'
+    - 'src/components/**/*.scss'
 jobs:
   test:
     runs-on: ubuntu-latest
