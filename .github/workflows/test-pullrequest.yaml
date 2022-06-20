@@ -4,9 +4,13 @@ on:
    branches:
      - 'main'
    paths:
-    - 'src/components/**/*.tsx'
+     - 'src/components/**/*.js'
+     - 'src/components/**/*.ts'
+     - 'src/components/**/*.tsx'
+     - 'src/components/**/*.scss'
+     - 'src/components/**/*.css'
 jobs:
-  test:
+  Test-Pull-Request:
     runs-on: ubuntu-latest
     strategy:
       matrix:
