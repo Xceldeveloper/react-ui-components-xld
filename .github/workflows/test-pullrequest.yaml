@@ -10,7 +10,7 @@ on:
      - 'src/components/**/*.scss'
      - 'src/components/**/*.css'
 jobs:
-  test:
+  Test-Pull-Request:
     runs-on: ubuntu-latest
     strategy:
       matrix:
