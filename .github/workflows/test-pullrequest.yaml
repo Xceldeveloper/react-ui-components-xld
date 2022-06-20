@@ -4,7 +4,7 @@ on:
    branches:
      - 'main'
    paths:
-      - 'src/components'
+      - 'src/components/XButton/**'
       # - 'src/components/**.css'
       # - 'src/components/**.scss'
 jobs:
