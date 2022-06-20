@@ -4,9 +4,8 @@ on:
    branches:
      - 'main'
    paths:
-    - '**.tsx'
+    - 'src/components/**/*.@(js|jsx|ts|tsx|scss|css)'
 jobs:
-  name: Pull Request Test Passed
   test:
     runs-on: ubuntu-latest
     strategy:
