@@ -6,6 +6,7 @@ on:
    paths:
     - 'src/components/**/*.tsx'
 jobs:
+  name: Pull Request Test Passed
   test:
     runs-on: ubuntu-latest
     strategy:
