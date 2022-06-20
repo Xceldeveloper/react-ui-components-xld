@@ -1,1 +1,1 @@
-export {default} from  './XButton'
+export {default} from './XButton'
