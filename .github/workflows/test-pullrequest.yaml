@@ -4,8 +4,11 @@ on:
    branches:
      - 'main'
    paths:
-    - 'src/components/**/*.tsx'
-    - 'src/components/**/*.scss'
+     - 'src/components/**/*.js'
+     - 'src/components/**/*.ts'
+     - 'src/components/**/*.tsx'
+     - 'src/components/**/*.scss'
+     - 'src/components/**/*.css'
 jobs:
   test:
     runs-on: ubuntu-latest
