@@ -1,7 +1,7 @@
 import 'react-app-polyfill/ie11';
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import { XThing, XButton, XInput, XGroupButton, XSelect } from '../dist';
+import { XThing, XInput, XGroupButton, XSelect, ButtonProps, XButton } from '../dist';
 
 const App = () => {
   const [value, setValue] = React.useState('');
@@ -11,6 +11,15 @@ const App = () => {
     setValue(e.target.value);
   }
 
+  const buttonStyle: ButtonProps = {
+    label:'sss',
+    borderRadius:'5px',
+    backgroundColor:'green',
+    style:{
+      cursor:'pointer'
+    },
+  }
+
 
   return (
     <div>
@@ -18,7 +27,7 @@ const App = () => {
 
       <XButton label="Button" backgroundColor='yellow' size='medium' />
 
-      <XButton label="Overcomer is coming" backgroundColor='red' size='large' />
+      <XButton {...buttonStyle}  size='large' />
 
       <XInput label="Input" type="text" />
 
